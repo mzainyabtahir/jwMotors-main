@@ -1,8 +1,8 @@
 package com.example.loginapp.models;
 
-public class Request {
+public class Requests {
 
-    public Request(){}
+    public Requests(){}
     private int id;
     private String vehicleName;
     private String registrationNumber;
@@ -56,7 +56,7 @@ public class Request {
 
     public String getLon(){return lon;}
     public void setLon(String lon){this.lon=lon;}
-    public Request(int id,String name,String phone, String vehicleName, String registrationNumber, String requiredWork, String email, String lat, String lon) {
+    public Requests(int id, String name, String phone, String vehicleName, String registrationNumber, String requiredWork, String email, String lat, String lon) {
         this.id = id;
         this.name=name;
         this.phone=phone;

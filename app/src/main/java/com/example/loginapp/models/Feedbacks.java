@@ -1,7 +1,7 @@
 package com.example.loginapp.models;
 import java.io.Serializable;
 
-public class feedback implements Serializable{
+public class Feedbacks implements Serializable{
 
     private String name,email,feedback;
 
@@ -14,8 +14,8 @@ public class feedback implements Serializable{
     public String getFeedback(){return feedback;}
     public void setFeedback(String feedback) {this.feedback = feedback;}
 
-    public feedback(){}
-    public feedback(String name, String email, String feedback)
+    public Feedbacks(){}
+    public Feedbacks(String name, String email, String feedback)
     {
         this.name=name;
         this.email=email;

@@ -86,7 +86,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                         Looper.myLooper());
                 mGoogleMap.setMyLocationEnabled(true);
             } else {
-                //Request Location Permission
+                //Requests Location Permission
                 checkLocationPermission();
             }
         } else {
@@ -135,7 +135,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
                 // Show an explanation to the user *asynchronously* -- don't block
                 // this thread waiting for the user's response! After the user
-                // sees the explanation, try again to Request the permission.
+                // sees the explanation, try again to Requests the permission.
                 new AlertDialog.Builder(this)
                         .setTitle("Location Permission Needed")
                         .setMessage("This app needs the Location permission, please accept to use location functionality")
@@ -153,7 +153,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
             } else {
-                // No explanation needed, we can Request the permission.
+                // No explanation needed, we can Requests the permission.
                 ActivityCompat.requestPermissions(this,
                         new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                         MY_PERMISSIONS_REQUEST_LOCATION );
@@ -165,7 +165,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         switch (requestCode) {
             case MY_PERMISSIONS_REQUEST_LOCATION: {
-                // If Request is cancelled, the result arrays are empty.
+                // If Requests is cancelled, the result arrays are empty.
                 if (grantResults.length > 0
                         && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
 

@@ -1,38 +1,22 @@
 package com.example.loginapp;
 
-import static android.content.ContentValues.TAG;
 import static com.example.loginapp.MapsActivity.MyPREFERENCES;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.location.Location;
 import android.os.Bundle;
-import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.loginapp.models.Request;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.DocumentSnapshot;
+import com.example.loginapp.models.Requests;
 import com.google.firebase.firestore.FirebaseFirestore;
-import com.google.firebase.firestore.QueryDocumentSnapshot;
-import com.google.firebase.firestore.QuerySnapshot;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class RequestMechanic extends AppCompatActivity {
 
@@ -86,7 +70,7 @@ public class RequestMechanic extends AppCompatActivity {
                     String longitude= sharedpreferences.getString("longKey", null);
                     String latitude= sharedpreferences.getString("latKey", null);
                     String email= sharedpreferences.getString("loginEmailKey", null);
-                    Toast.makeText(getApplicationContext(), "We have received your Request! \n Our representative will contact you shortly.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "We have received your Requests! \n Our representative will contact you shortly.", Toast.LENGTH_SHORT).show();
 
 
                     FirebaseFirestore db= FirebaseFirestore.getInstance();
@@ -115,7 +99,7 @@ public class RequestMechanic extends AppCompatActivity {
 
                     //Toast.makeText(getApplicationContext(), index, Toast.LENGTH_SHORT).show();
                     int b = (int)(Math.random()*(999999-1+1)+1);
-                    Request request=new Request(b,name1,phone1,vehicle1,regNo1,reqWork,email,latitude,longitude);
+                    Requests request=new Requests(b,name1,phone1,vehicle1,regNo1,reqWork,email,latitude,longitude);
 
                     db.collection("requests").document(String.valueOf(request.getId()))
                             .get()

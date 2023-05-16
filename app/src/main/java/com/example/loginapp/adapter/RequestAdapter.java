@@ -11,16 +11,16 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.loginapp.OnClickItemListener;
 import com.example.loginapp.R;
-import com.example.loginapp.models.Request;
+import com.example.loginapp.models.Requests;
 
 import java.util.List;
 
 public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHolder> {
 
-    List<Request> lsRequest;
+    List<Requests> lsRequest;
     OnClickItemListener onClickItemListener;
 
-    public RequestAdapter(List<Request> lsRequest, OnClickItemListener onClickItemListener) {
+    public RequestAdapter(List<Requests> lsRequest, OnClickItemListener onClickItemListener) {
         this.lsRequest = lsRequest;
         this.onClickItemListener = onClickItemListener;
     }
@@ -35,7 +35,7 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
 
-        holder.txvID.setText(lsRequest.get(position).getEmail()+"");
+        holder.txvID.setText(lsRequest.get(position).getId()+"");
         holder.txvRegistrationNumber.setText(lsRequest.get(position).getRegistrationNumber());
         holder.txvVehicleNumber.setText(lsRequest.get(position).getVehicleName());
     }

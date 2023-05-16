@@ -36,7 +36,7 @@ public class AdminDashboard extends AppCompatActivity implements View.OnClickLis
                 startActivity(new Intent(this, CustomerRequests.class));
                 break;
             case R.id.button_feedBack:
-                startActivity(new Intent(this, Feedback.class));
+                startActivity(new Intent(this, CustomerFeedback.class));
                 break;
             case R.id.button_update_password:
                 startActivity(new Intent(this, UpdatePassword.class));

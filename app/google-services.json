@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "130554570847",
+    "firebase_url": "https://jwmotors-3b1f5-default-rtdb.firebaseio.com",
+    "project_id": "jwmotors-3b1f5",
+    "storage_bucket": "jwmotors-3b1f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130554570847:android:687f2782c1ed202fe713ea",
+        "android_client_info": {
+          "package_name": "id.eudeka.osg3.googlemapssample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "130554570847-76mesdei6rfv2akma1bdve8e44ieton0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHipqErSHlWwPlqYwhp9FcLVScZqLSzxw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "130554570847-76mesdei6rfv2akma1bdve8e44ieton0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

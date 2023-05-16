@@ -1,0 +1,28 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <item
+        android:title="Request Mechanic"
+        android:id="@+id/reqMech"/>
+    <item
+        android:title="My Location"
+        android:id="@+id/mylocation"/>
+
+    <item
+        android:title="Feedback"
+        android:id="@+id/feedback"/>
+    <item
+        android:title="About Us"
+        android:id="@+id/about" />
+    <item
+        android:title="Services"
+        android:id="@+id/services" />
+
+    <item
+        android:title="Logout"
+        android:id="@+id/logout"/>
+
+
+</menu>
+
+
